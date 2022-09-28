@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <div class="top">
+        <div class="logo">
+            <img src="img/logo-buc.png" alt="Logo of bottom-up.city">
+        </div>
+    </div>
+    <div class="main-container">
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="menu-point" href="#" onClick='document.getElementById("iframe").src="htmls/bubble.html";'>
+                <span class="material-symbols-outlined">bubble_chart</span>
+                Bubble-Chart
+            </a>
+            <a class="menu-point" href="#" onClick='document.getElementById("iframe").src="htmls/map.html";'>
+                <span class="material-symbols-outlined">map</span> 
+                Interactive-Map
+            </a>
+            <a class="menu-point" href="#" onClick='document.getElementById("iframe").src="htmls/edgelist_network.html";'>
+                <span class="material-symbols-outlined">hub</span>
+                Edgenetwork
+            </a>
+        </div>
+      
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button> 
+            <div class="content">
+                <iframe src="htmls/bubble.html" id="iframe"></iframe>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class="copyright">Copyright &copy; bottom-up.city 2022</p>
+    </footer>
+</body>
+</html>
